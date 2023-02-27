@@ -3,6 +3,7 @@
 
 This currency converter is a software application that allows us to convert the value of one currency to another. It works by using the current exchange rate between the two currencies to calculate the value of one currency in terms of the other.
 
+This app is a separate version of Student World. Especially, I made this app for international students, who can easily convert the required currency.
 
 
 ## Screenshots
