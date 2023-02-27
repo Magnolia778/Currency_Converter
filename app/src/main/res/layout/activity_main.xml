@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/money" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:text="Enter the amount of Dollars ($) :"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/dollar"
+        android:layout_width="202dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="167dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#15dede"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignBaseline="@+id/dollar"
+        android:layout_toEndOf="@+id/imageView"
+        android:onClick="convert"
+        android:text="Convert"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_centerVertical="true"
+        android:text="Enter the amount of Euro (€):"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/euro"
+        android:layout_width="200dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dollar"
+        android:layout_marginBottom="166dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#ebf708"
+        android:textSize="20sp"
+        tools:ignore="InvalidId" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:text="Enter the amount of Pound (£):"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pound"
+        android:layout_width="202dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dollar"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#ce0e9a"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="InvalidId" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignBaseline="@+id/euro"
+        android:layout_toEndOf="@+id/imageView"
+        android:onClick="convert1"
+        android:text="Convert"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignBaseline="@+id/pound"
+        android:layout_toEndOf="@+id/imageView"
+        android:onClick="convert2"
+        android:text="Convert"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>
